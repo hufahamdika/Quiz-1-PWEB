@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+        <form class="form" onsubmit="submitFunction()">
+            <h1>Formulir Pendaftaran</h1>
+            
+            <fieldset>
+            <legend style="text-align:center;">Pekan Olahraga dan Seni Guru TKA/TPA Tahun 2020</legend>
+            
+            <label for="name">Nama Peserta</label>
+            <input type="text" id="name" name="user_name" required>
+            
+            <label for="birthplace_date">Tempat Tanggal Lahir</label>
+            <input type="text" id="birthplace_date" name="user_birthplace_date" required>
+        
+            <label for="utusan">Utusan Unit TKA/TPA</label>
+            <input type="text" id="utusan" name="user_utusan" required>
+
+            <label for="district">Kecamatan</label>
+            <input type="text" id="district" name="user_district" required>
+
+            <label for="phonenumber">Nomor Telepon</label>
+            <input type="tel" id="phonenumber" name="user_phonenumber" required>
+
+            <label for="comptype">Jenis Lomba</label>
+            <select id="comptype" name="user_comptype">
+                <option value="tarik_tambang">Tarik Tambang (4 Perempuan + 1 Laki = 5 Orang) </option>
+                <option value="lari_estafet">Lari Estafet (4 Perempuan)</option>
+                <option value="gobak_sodor">Gobak Sodor (4 Perempuan)</option>
+                <option value="tartil">Tartil (1 orang perwakilan TKA/KPA)</option>
+                <option value="ceramah">Ceramah(1 orang perwakilan TKA/TPA)</option>
+            </select>
+            <p style="margin-top:-20px;">Ket : Pilih salah satu jenis lomba</p>
+
+            <p>Surabaya, </p>
+            <label style="margin-top:-10px" for="date"></label>
+            <input type="date" id="date" name="today_date" required>
+            
+            <label for="signature_tpa">Upload Tanda Tangan Kepala Unit TKA/TPA</label>
+            <input type="file" id="signature_tpa" name="signature_tpa" accept="image/png, image/jpeg, image/jpg" required>
+            
+            <label style="margin-top: 20px;" for="signature_user">Upload Tanda Tangan Peserta</label>
+            <input type="file" id="signature_user" name="signature_user" accept="image/png, image/jpeg, image/jpg" required>
+            </fieldset>
+        
+            <button type="submit">Register</button>
+            <script src="script.js"></script>
+        </form>
+        
+      </div>
+    </body>
+</html>
